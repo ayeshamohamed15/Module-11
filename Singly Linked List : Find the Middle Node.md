@@ -36,10 +36,47 @@ To write a Python program that:
 ---
 
 ## 💻 Program
-Add code here
+class Node:  <br>
+    def __init__(self, data): <br>
+       self.data = data <br>
+       self.next = None<br>
+class LinkedList:<br>
+ 
+  def __init__(self):<br>
+       self.head = None<br>
+    def append(self, data):<br>
+       new_node = Node(data)<br>
+       if not self.head:<br>
+          self.head = new_node<br>
+          return<br>
+       temp = self.head<br>
+
+   while temp.next:<br>
+          temp = temp.next<br>
+          temp.next = new_node<br>
+    def get_middle_recursive(self, slow, fast):<br>
+      if not fast or not fast.next:<br>
+          return slow # Return the middle node<br>
+          return self.get_middle_recursive(slow.next, fast.next.next)<br>
+    def find_middle(self):<br>
+       if not self.head:<br>
+          return None<br>
+       middle_node = self.get_middle_recursive(self.head, self.head)<br>
+          return middle_node.data if middle_node else None<br>
+         n = int(input().strip()) # Number of elements<br>
+         arr = list(map(int, input().strip().split())) # Linked list elements<br>
+# Create linked list and append elements<br>
+ll = LinkedList()<br>
+for num in arr:<br>
+    ll.append(num)<br>
+# Find and print middle element<br>
+print(ll.find_middle())
 
 ## Sample Input & Output
+<img width="329" height="144" alt="image" src="https://github.com/user-attachments/assets/0bd935f0-3289-46f2-aec5-f37eb3072b52" />
 
 ## Result
 
+
+Thus, the Python program has been created and executed successfully ..
 
