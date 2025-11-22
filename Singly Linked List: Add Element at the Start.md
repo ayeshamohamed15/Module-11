@@ -34,8 +34,37 @@ To write a Python program that adds a **new element** at the **start** of a sing
 ---
 
 ## Program
-Add Code Here
+class Node:<br>
+   def init (self, data): <br>
+      self.data = data <br>
+      self.next = None<br>
+class LinkedList:<br>
+   def init (self):<br>
+      self.head = None<br>
+   def push(self, new_data): <br>
+      new_node = Node(new_data) <br>
+      new_node.next = self.head <br>
+      self.head = new_node<br>
+   def search(self, x): <br>
+      current = self.head <br>
+      while current:<br>
+         if current.data == x: <br>
+            return True<br>
+      current = current.next <br>
+         return False<br>
+llist = LinkedList() <br>
+llist.push(10); <br>
+llist.push(30);<br> 
+llist.push(11); <br>
+llist.push(21);<br>
+llist.push(14);<br>
+   data = int(input()) <br>
+   if llist.search(data):<br>
+      print("Yes") <br>
+   else:<br>
+      print("No")
 ## Sample Output
+<img width="224" height="120" alt="image" src="https://github.com/user-attachments/assets/519150ee-9aa0-4035-80cb-5910116aab04" />
 
 ## Result
-
+Thus the program has been successfully executed
