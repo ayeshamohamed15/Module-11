@@ -34,9 +34,51 @@ To write a Python program that:
 ---
 
 ## 💻 Program
-Add Code here
+class Node q: <br>
+def init (self, data):  <br>
+   self.data = data  <br>
+   self.next = None  <br>
+   self.prev = None  <br>
+class DoublyLinkedList:  <br>
+   def init (self):  <br>
+      self.head = None   <br>
+   def insert_beginning(self,data):  <br>
+      new_node = Nodeq(data)  <br>
+      if(self.head == None):  <br>
+         self.head = new_node  <br>
+         return  <br>
+      self.head.prev = new_node  <br>
+      new_node.next = self.head  <br>
+      self.head = new_node  <br>
+
+def insert_end(self, new_data):  <br>
+      new_node = Nodeq(new_data)   <br>
+      if self.head is None:  <br>
+         new_node.prev = None   <br>
+         self.head = new_node  <br>
+         return  <br>
+      last = self.head  <br>
+while last.next:  <br>
+      last = last.next  <br>
+      last.next = new_node  <br>
+      new_node.prev = last  <br>
+def search(self,data):  <br>
+      current = self.head  <br>
+while current:  <br>
+      if current.data == data:  <br>
+         return True  <br>
+      current = current.next  <br>
+print("The given data doesnot exist:")  <br>
+      return False  <br>
+Dllist = DoublyLinkedList()  <br>
+Dllist.insert_beginning(2)  <br>
+Dllist.insert_end(0)  <br>
+Dllist.insert_end(1)  <br>
+print(Dllist.search(0))  <br>
+print(Dllist.search(3))
 
 ## Sample Output
+<img width="461" height="143" alt="image" src="https://github.com/user-attachments/assets/9295f0be-0d84-49ad-8aff-cfbdd035cb6e" />
 
 ## Result
-
+Thus the program has been successfully executed
